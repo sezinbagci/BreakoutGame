@@ -1,0 +1,36 @@
+# CMake build output
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio Code
+.vscode/
+
+# Compiled files
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+
+# Dear ImGui local settings
+imgui.ini
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary and backup files
+*.tmp
+*.bak
+*~
