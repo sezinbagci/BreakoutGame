@@ -23,7 +23,7 @@ target_include_directories(imgui PUBLIC
     external/imgui
 )
 
-# raylib - Dear ImGui bağlantısı
+# raylib - Dear ImGui connection
 add_library(rlimgui STATIC
     external/rlimgui/rlImGui.cpp
 )
@@ -37,9 +37,17 @@ target_link_libraries(rlimgui PUBLIC
     imgui
 )
 
-# Bizim uygulamamız
+# Game source files
 add_executable(SimulationGame
-    main.cpp
+    src/main.cpp
+    src/Game.cpp
+    src/Ball.cpp
+    src/Paddle.cpp
+    src/Brick.cpp
+)
+
+target_include_directories(SimulationGame PRIVATE
+    include
 )
 
 target_link_libraries(SimulationGame PRIVATE

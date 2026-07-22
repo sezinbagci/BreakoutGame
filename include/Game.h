@@ -19,6 +19,11 @@ private:
     void DrawDebugPanel();
 
     void CreateBricks();
+    void CreateGridLevel();
+    void CreatePyramidLevel();
+    void CreateDiamondLevel();
+
+    void StartNextLevel();
     void ResetGame();
 
     void HandleWallCollisions();
@@ -46,7 +51,11 @@ private:
     Vector2 aimDirection;
 
     int score;
+    int currentLevel;
+    int totalLevels;
 
     bool gamePaused;
     bool showDebugPanel;
+    bool levelCompleted;
+    bool gameWon;
 };
