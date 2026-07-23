@@ -1,10 +1,8 @@
 #pragma once
 
 #include "Ball.h"
-#include "Brick.h"
+#include "LevelManager.h"
 #include "Paddle.h"
-
-#include <vector>
 
 class Game
 {
@@ -17,11 +15,6 @@ private:
     void Update();
     void Draw();
     void DrawDebugPanel();
-
-    void CreateBricks();
-    void CreateGridLevel();
-    void CreatePyramidLevel();
-    void CreateDiamondLevel();
 
     void StartNextLevel();
     void ResetGame();
@@ -46,13 +39,11 @@ private:
     Paddle paddle;
     Ball ball;
 
-    std::vector<Brick> bricks;
+    LevelManager levelManager;
 
     Vector2 aimDirection;
 
     int score;
-    int currentLevel;
-    int totalLevels;
 
     bool gamePaused;
     bool showDebugPanel;

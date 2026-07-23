@@ -44,6 +44,8 @@ add_executable(SimulationGame
     src/Ball.cpp
     src/Paddle.cpp
     src/Brick.cpp
+    src/Level.cpp
+    src/LevelManager.cpp
 )
 
 target_include_directories(SimulationGame PRIVATE
